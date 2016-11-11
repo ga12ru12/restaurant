@@ -1,0 +1,21 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+.Login {
+  min-height: 100%;
+  text-align: center;
+  background: url("../media/login-background.jpg") center;
+  background-size: cover;
+}
+.Login-modal {
+  width: 250px;
+  height: 300px;
+  position: absolute;
+  top: 180px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: white;
+  border: 5px;
+}

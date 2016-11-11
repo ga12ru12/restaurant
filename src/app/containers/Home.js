@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import logo from '../media/logo.svg';
-import '../css/App.css';
+import { Link } from 'react-router';
+import logo from '../../media/logo.svg';
+import '../../css/App.css';
 
 class Home extends Component {
   render() {
