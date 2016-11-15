@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Button, Form, FormGroup, FormControl } from 'react-bootstrap';
+import FontAwesome from 'react-fontawesome';
 import '../../css/Login.css';
 
 class Login extends Component {
@@ -7,7 +8,7 @@ class Login extends Component {
     return (
       <div className="Login">
         <div className="Login-modal">
-          <h3>Login</h3>
+          <FontAwesome name='user-circle-o' size='4x' className="Login-logo" inverse="white"/>
           <Form>
             <div className="Login-form">
               <FormGroup controlId="formUsername">
@@ -23,7 +24,7 @@ class Login extends Component {
                 />
               </FormGroup>
             </div>
-            <Button>Login</Button>
+            <Button className="LoginBtn">Login</Button>
           </Form>
         </div>
       </div>
