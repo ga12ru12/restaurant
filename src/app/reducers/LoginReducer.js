@@ -1,4 +1,4 @@
-import { LOGIN, USER_STATUS } from '../actions/Login';
+import { LOGIN, USER_STATUS } from '../actions/LoginAction';
 
 const initialState = {
   USER_STATUS: USER_STATUS.ANONYMOUS
@@ -14,3 +14,5 @@ function loginApp(state = initialState, action){
       return state;
   }
 }
+
+export default loginApp;
