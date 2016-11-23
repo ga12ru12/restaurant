@@ -1,12 +1,19 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import restaurantApp from './app/reducers/index';
 import App from './app/App';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
 import './lib/font-awesome-4.7.0/css/font-awesome.min.css';
 import './css/index.css';
 
-ReactDOM.render(
-  <App />,
+let store = createStore(restaurantApp);
+
+render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
   document.getElementById('root')
 );
