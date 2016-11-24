@@ -10,10 +10,11 @@ import './lib/font-awesome-4.7.0/css/font-awesome.min.css';
 import './css/index.css';
 
 let store = createStore(restaurantApp);
+const { getState } = store;
 
 render(
   <Provider store={store}>
-    <App />
+    <App getState={getState}/>
   </Provider>,
   document.getElementById('root')
 );

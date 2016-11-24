@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import loginApp from './LoginReducer';
+import loginState from './LoginReducer';
 
 const restaurantApp = combineReducers({
-  loginApp
+  loginState
 })
 
 export default restaurantApp;

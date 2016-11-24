@@ -4,7 +4,7 @@ const initialState = {
   USER_STATUS: USER_STATUS.ANONYMOUS
 }
 
-function loginApp(state = initialState, action){
+function loginState(state = initialState, action){
   switch (action.type){
     case LOGIN:
       return Object.assign({}, state, {
@@ -15,4 +15,4 @@ function loginApp(state = initialState, action){
   }
 }
 
-export default loginApp;
+export default loginState;
