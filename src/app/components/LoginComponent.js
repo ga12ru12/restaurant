@@ -3,8 +3,21 @@ import { findDOMNode } from 'react-dom';
 import { Button, Form, FormGroup, FormControl } from 'react-bootstrap';
 import FontAwesome from 'react-fontawesome';
 import '../../css/Login.css';
+import { USER_STATUS } from '../actions/LoginAction';
 
 class Login extends Component {
+  componentWillMount() {
+    let { userStatus, router } = this.props;
+    if( userStatus === USER_STATUS.AUTHENTICATED )
+      return router.push('/');
+  }
+
+  componentWillUpdate(nextProps, nextState) {
+    let { userStatus, router } = nextProps;
+    if( userStatus === USER_STATUS.AUTHENTICATED )
+      return router.push('/');
+  }
+
   render() {
     return (
       <div className="Login">

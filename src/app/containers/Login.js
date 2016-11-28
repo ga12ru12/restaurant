@@ -4,7 +4,7 @@ import LoginComponents from '../components/LoginComponent';
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    userStatus: state.USER_STATUS
+    userStatus: state.loginState.USER_STATUS
   }
 }
 

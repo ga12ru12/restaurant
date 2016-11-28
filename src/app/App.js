@@ -23,6 +23,7 @@ class App extends Component {
       </Route>
     );
   }
+  
   authenHandler(nextState, replace, callback) {
     const {getState} = this.props;
     const state = getState();
