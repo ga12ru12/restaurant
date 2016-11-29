@@ -10,7 +10,7 @@ export const FOOD_STATUS = {
 export function addNewFoodToMenu(data){
   return {
     type: ADD_FOOD,
-    data: data
+    payload: data
   }
 }
 
