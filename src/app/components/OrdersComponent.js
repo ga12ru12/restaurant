@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import PureComponent from './PureComponent';
 import HomeMenu from './HomeMenu';
 
-class Orders extends Component{
+class Orders extends PureComponent{
   render(){
     return (
       <div className="Orders">

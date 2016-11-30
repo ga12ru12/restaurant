@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import PureComponent from './PureComponent';
 import { findDOMNode } from 'react-dom';
 import { Button, Form, FormGroup, FormControl } from 'react-bootstrap';
 import FontAwesome from 'react-fontawesome';
 import '../../css/Login.css';
 import { USER_STATUS } from '../actions/LoginAction';
 
-class Login extends Component {
+class Login extends PureComponent {
   componentWillMount() {
     let { userStatus, router } = this.props;
     if( userStatus === USER_STATUS.AUTHENTICATED )

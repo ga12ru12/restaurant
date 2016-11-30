@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import PureComponent from './PureComponent';
 import { Navbar, Nav, NavItem} from 'react-bootstrap';
 import { Link } from 'react-router';
 import '../../css/components/HomeMenu.css'
 
-class HomeMenu extends Component {
+class HomeMenu extends PureComponent {
   render() {
     return (
       <Navbar inverse={true} className="HomeMenu">
