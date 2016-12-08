@@ -3,8 +3,7 @@ import loginState from './LoginReducer';
 import menu from './MenuReducer';
 
 const restaurantApp = combineReducers({
-  loginState,
-  menu
+  loginState
 })
 
 export default restaurantApp;

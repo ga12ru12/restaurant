@@ -1,4 +1,4 @@
-import PureComponent from './PureComponent';
+import React, { PureComponent } from 'react';
 import { findDOMNode } from 'react-dom';
 import { Button, Form, FormGroup, FormControl } from 'react-bootstrap';
 import FontAwesome from 'react-fontawesome';

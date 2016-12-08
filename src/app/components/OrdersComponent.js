@@ -1,4 +1,4 @@
-import PureComponent from './PureComponent';
+import React, { PureComponent } from 'react';
 import HomeMenu from './HomeMenu';
 
 class Orders extends PureComponent{

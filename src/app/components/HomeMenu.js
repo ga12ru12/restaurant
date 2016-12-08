@@ -1,4 +1,4 @@
-import PureComponent from './PureComponent';
+import React, { PureComponent } from 'react';
 import { Navbar, Nav, NavItem} from 'react-bootstrap';
 import { Link } from 'react-router';
 import '../../css/components/HomeMenu.css'
